@@ -7,6 +7,7 @@ public class BankCustomer {
 	private String bankName;
 	private boolean isSavingsAccount;
 	private String ifscCode;
+	private int price;
 	public void setaccountNumber(long accountNumber) {
 		this.accountNumber=accountNumber;
 	}
@@ -43,14 +44,21 @@ public class BankCustomer {
 	public String getIfscCode() {
 		return ifscCode;
 	}
+	public void setprice(int price) {
+		this.price=price;
+	}
+	public int getprice() {
+		return price;
+	}
 	public BankCustomer(long accountNumber, String name, int age, String bankName, boolean isSavingsAccount,
-			String ifscCode) {
+			String ifscCode,int price) {
 		this.accountNumber = accountNumber;
 		this.name = name;
 		this.age = age;
 		this.bankName = bankName;
 		this.isSavingsAccount = isSavingsAccount;
 		this.ifscCode = ifscCode;
+		this.price=price;
 	}
 
 	public String toString() {
